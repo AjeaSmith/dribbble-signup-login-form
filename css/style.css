@@ -1,0 +1,123 @@
+*{
+    margin:0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;  
+}
+.bg_image{
+    position: relative;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+}
+.bg_image::after{
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url("../images/Star-PNG-File.png");
+    background-position: top 100px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:-428px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.form_container{
+    z-index: 100;
+}
+.form_container .signup_form{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form_container .signup_form form{
+    margin-top: 10em;
+}
+.form_container .signup_form form h2{
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.form_container .signup_form form .input_field{
+    background: rgba(255,255,255,0.2);
+    padding: 0.6em 0.5em;
+    width: 320px;
+    margin-bottom: 1.2em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.46);
+}
+.form_container .signup_form form .input_field i{
+    color: white;
+    font-size: 1.4em;
+    padding: 0 0.3em;
+}
+.form_container .signup_form form .input_field input{
+    color: white;
+    font-size: 1em;
+    outline: 0;
+    background: none;
+    border: 0;
+}
+.form_container .signup_form form .input_field_button button{
+    padding: 0.8em 0;
+    font-size: 1em;
+    width: 320px;
+    background: #4024ab;
+    color: white;
+    border: 0;
+    border-bottom: 0 none;
+    box-shadow:0 1px 4px rgba(6, 18, 38, 1), 0 0 40px rgba(6, 18, 38, 0.3) inset;
+    outline: 0;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+.form_container .signup_form form hr{
+    margin-bottom: 1em;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.form_container .signup_form form p{
+    color: white;
+    text-align: center;
+}
+::placeholder {
+    text-align: left;
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: white;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .bg_image::after{
+        top:-460px;
+        background-repeat: repeat;
+    }
+    .form_container .signup_form form{
+        margin-top: 9em;
+    }
+    .form_container .signup_form form h2{
+        margin-bottom: 1.2em;
+        font-size: 2.5em;
+    }
+    .form_container .signup_form form .input_field{
+        padding: 0.8em 0.5em; 
+    }
+    .form_container .signup_form form .input_field, .form_container .signup_form form .input_field_button button{
+        width: 100%;
+    }
+}
