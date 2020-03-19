@@ -4,6 +4,7 @@
  - font awesome for icons
  - "Montserrat" font. It can be found here [https://fonts.google.com/specimen/Montserrat](https://fonts.google.com/specimen/Montserrat)
  - CSS Flexbox for layout
+ - https://unsplash.com/ used for images
 
 ### Helpful Links
 - [http://vclever.com/blog/how-to-style-a-heading-with-horizontal-lines-either-side-using-css/](http://vclever.com/blog/how-to-style-a-heading-with-horizontal-lines-either-side-using-css/) how to add horizontal lines between titles.
